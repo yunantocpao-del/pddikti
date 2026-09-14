@@ -1,0 +1,23 @@
+[project]
+name = "sivitas-api"
+version = "5.0.0"
+description = "Sivitas API - structured access to Indonesian higher-education data: universities, study programs, lecturers, and students. Independent project, not affiliated with any government body."
+license = { file = "LICENSE" }
+authors = [
+    { name = "RoneAI", email = "founder@rone.dev" },
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "curl-cffi>=0.16.2",
+    "fastapi[standard]>=0.116.1",
+    "requests>=2.33.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
+
+[tool.uv]
+package = false
